@@ -1,0 +1,443 @@
+/* AddPlatform.css */
+
+/* Base Styles */
+.add-platform-container {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  .dark-theme .add-platform-container {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .platform-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 80px; /* Account for navbar */
+  }
+  
+  .platform-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .platform-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #6e48aa, #4bc0c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .platform-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .dark-theme .platform-header p {
+    color: #aaa;
+  }
+  
+  /* Alert Messages */
+  .alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .alert-icon {
+    font-size: 1.2rem;
+  }
+  
+  .alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+  }
+  
+  .dark-theme .alert-error {
+    background-color: #2a0a0a;
+    color: #ff8a80;
+    border-left-color: #ff8a80;
+  }
+  
+  .alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+  }
+  
+  .dark-theme .alert-success {
+    background-color: #0a2a0a;
+    color: #69f0ae;
+    border-left-color: #69f0ae;
+  }
+  
+  /* Platform Section Layout */
+  .platform-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 992px) {
+    .platform-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Form Styles */
+  .platform-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .dark-theme .platform-form-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .platform-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #6e48aa;
+  }
+  
+  .dark-theme .platform-form-container h2 {
+    color: #9d50bb;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .dark-theme .form-group label {
+    color: #bbb;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-theme .form-group select,
+  .dark-theme .form-group input {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+  
+  .form-group select:focus,
+  .form-group input:focus {
+    outline: none;
+    border-color: #6e48aa;
+    box-shadow: 0 0 0 2px rgba(110, 72, 170, 0.2);
+  }
+  
+  .dark-theme .form-group select:focus,
+  .dark-theme .form-group input:focus {
+    border-color: #9d50bb;
+    box-shadow: 0 0 0 2px rgba(157, 80, 187, 0.3);
+  }
+  
+  /* Button Styles */
+  .btn-add-platform {
+    background-color: #6e48aa;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .btn-add-platform:hover {
+    background-color: #5d3d92;
+  }
+  
+  .btn-add-platform:disabled {
+    background-color: #b39ddb;
+    cursor: not-allowed;
+  }
+  
+  /* Platforms List Styles */
+  .platforms-list-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .dark-theme .platforms-list-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .platforms-list-container h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #6e48aa;
+  }
+  
+  .dark-theme .platforms-list-container h2 {
+    color: #9d50bb;
+  }
+  
+  /* Loading State */
+  .loading-spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(110, 72, 170, 0.2);
+    border-top-color: #6e48aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  .dark-theme .loading-spinner {
+    border-top-color: #9d50bb;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Empty State */
+  .empty-platforms {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+  }
+  
+  .empty-platforms h3 {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .dark-theme .empty-platforms h3 {
+    color: #aaa;
+  }
+  
+  .empty-platforms p {
+    color: #777;
+  }
+  
+  .dark-theme .empty-platforms p {
+    color: #888;
+  }
+  
+  /* Platform Cards */
+  .platform-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-theme .platform-card {
+    background-color: #2a2a2a;
+  }
+  
+  .platform-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-theme .platform-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .platform-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+  }
+  
+  .platform-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 72, 170, 0.1);
+    border-radius: 50%;
+  }
+  
+  .platform-details {
+    flex-grow: 1;
+  }
+  
+  .platform-details h3 {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    color: #444;
+  }
+  
+  .dark-theme .platform-details h3 {
+    color: #ddd;
+  }
+  
+  .platform-handle {
+    margin: 0;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .dark-theme .platform-handle {
+    color: #aaa;
+  }
+  
+  .platform-rating {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(75, 192, 200, 0.1);
+    color: #4bc0c8;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  
+  /* Edit Form */
+  .edit-handle-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .edit-handle-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  
+  .dark-theme .edit-handle-input {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .btn-save,
+  .btn-cancel {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-save {
+    background-color: #4bc0c8;
+    color: white;
+  }
+  
+  .btn-save:hover {
+    background-color: #3aa8b0;
+  }
+  
+  .btn-cancel {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #e05555;
+  }
+  
+  /* Platform Actions */
+  .platform-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .btn-edit,
+  .btn-delete {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: transparent;
+  }
+  
+  .btn-edit {
+    color: #6e48aa;
+  }
+  
+  .dark-theme .btn-edit {
+    color: #9d50bb;
+  }
+  
+  .btn-edit:hover {
+    background-color: rgba(110, 72, 170, 0.1);
+  }
+  
+  .btn-delete {
+    color: #ff6b6b;
+  }
+  
+  .btn-delete:hover {
+    background-color: rgba(255, 107, 107, 0.1);
+  }

@@ -1,0 +1,106 @@
+.bookmark-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-left: 4px solid #4f46e5;
+  }
+  
+  .bookmark-card.past-contest {
+    opacity: 0.8;
+    border-left-color: #6b7280;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .platform-badge,
+  .status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .contest-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+  }
+  
+  .contest-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #4b5563;
+  }
+  
+  .meta-icon {
+    color: #6b7280;
+  }
+  
+  .countdown {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1f2937;
+  }
+  
+  .countdown-timer {
+    font-weight: 600;
+  }
+  
+  .card-footer {
+    display: flex;
+    padding: 12px 16px;
+    border-top: 1px solid #e5e7eb;
+    gap: 8px;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .action-btn.primary {
+    background-color: #4f46e5;
+    color: white;
+    margin-left: auto;
+  }
+  
+  .action-btn.secondary {
+    background-color: #e5e7eb;
+    color: #4b5563;
+  }
+  
+  .action-btn.danger {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .action-btn:hover {
+    transform: translateY(-2px);
+  }
