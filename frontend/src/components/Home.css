@@ -97,7 +97,9 @@
     max-width: 500px;
     width: 100%;
   }
-  
+
+
+
   .code-snippet {
     background-color: #1a1a2e;
     border-radius: 12px;
@@ -105,7 +107,75 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
+  
+  .code-snippet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #2d2d42;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+  
+  .code-snippet::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f56;
+    box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  }
+  
+  .code-content {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: #e2e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre;
+  }
+  
+  .code-keyword {
+    color: #7f5af0;
+  }
+  
+  .code-comment {
+    color: #4a5568;
+    font-style: italic;
+  }
+  
+  .code-string {
+    color: #4bc0c8;
+  }
+  
+  .code-function {
+    color: #6e48aa;
+  }
+  
+  .code-var {
+    color: #f8f9fa;
+  }
+
+  /* .code-snippet {
+    background-color: #1a1a2e;
+    border-radius: 12px;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  } 
   
   .code-snippet::before {
     content: "";
@@ -339,5 +409,103 @@
   
     .hero-subtitle {
       font-size: 1.5rem;
+    }
+  }
+
+
+  .features-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-titles {
+    
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem; 
+    background: linear-gradient(90deg, #6e48aa, #4bc0c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+    
+  .section-subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(110, 72, 170, 0.1);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(110, 72, 170, 0.1);
+    border-color: rgba(110, 72, 170, 0.3);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(110, 72, 170, 0.1);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-icon svg {
+    width: 30px;
+    height: 30px;
+    color: #6e48aa;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+  }
+  
+  .feature-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
     }
   }
