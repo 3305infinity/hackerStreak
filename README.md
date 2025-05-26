@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+HackStreak
+HackStreak is a full stack web application designed to track and visualize coding streaks, helping developers maintain consistent coding habits and monitor their progress over time.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features
+Streak Tracking: Monitor daily coding activities and maintain streaks.
 
-## Available Scripts
+Data Visualization: Graphical representation of coding patterns and streaks.
 
-In the project directory, you can run:
+User Authentication: Secure login and registration system.
 
-### `npm start`
+Responsive Design: Optimized for various devices and screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🛠️ Tech Stack
+Frontend: React.js (bootstrapped with Create React App)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Backend: Node.js, Express.js
 
-### `npm test`
+Database: MongoDB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Web Scraping: Custom scripts (located in the scraper directory)
 
-### `npm run build`
+📂 Project Structure
+bash
+Copy
+Edit
+hackerStreak/
+├── backend/       # Backend server code (Node.js, Express)
+├── frontend/      # Frontend application (React.js)
+├── scraper/       # Web scraping scripts
+├── .gitignore
+└── README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧑‍💻 Getting Started
+Prerequisites
+Node.js (v14 or above)
 
-### `npm run eject`
+npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+MongoDB instance (local or cloud-based)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installation
+Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy
+Edit
+git clone https://github.com/3305infinity/hackerStreak.git
+cd hackerStreak
+Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Backend:
 
-## Learn More
+bash
+Copy
+Edit
+cd backend
+npm install
+Frontend:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copy
+Edit
+cd ../frontend
+npm install
+Set up environment variables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a .env file in the backend directory with the following content:
 
-### Code Splitting
+env
+Copy
+Edit
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
+Run the application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend:
 
-### Analyzing the Bundle Size
+bash
+Copy
+Edit
+cd backend
+npm start
+Frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash
+Copy
+Edit
+cd ../frontend
+npm start
+The frontend will be available at http://localhost:3000, and the backend API will run on http://localhost:5000.
 
-### Making a Progressive Web App
+📈 Usage
+Register/Login: Create an account or log in with existing credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Dashboard: View your current coding streak and historical data.
 
-### Advanced Configuration
+Analytics: Analyze your coding patterns and identify areas for improvement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
 
-### Deployment
+Fork the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Create a new branch:
 
-### `npm run build` fails to minify
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bash
+Copy
+Edit
+git commit -m "Add your message here"
+Push to the branch:
+
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a pull request.
+
+📄 License
+This project is licensed under the MIT License.
+
+📬 Contact
+For any inquiries or feedback, please reach out to your-email@example.com.
