@@ -327,14 +327,8 @@
 //         )}
 //       </main>
 //     </div>
-//   );
-// }
-
-// export default AllContests;
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 import ContestCard from '../components/ContestCard';
 import '../styles/AllContests.css';
 
@@ -397,8 +391,6 @@ function AllContests() {
 
   return (
     <div className="all-contests-container">
-      <Navbar />
-      
       <main className="all-contests-main">
         <div className="header-section">
           <h1 className="page-title">Coding Contests</h1>

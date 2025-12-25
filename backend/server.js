@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
-const db = require('./db');
+const connectDB = require('./db');
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+connectDB();
+
 // Middleware
 app.use(cors({
   origin: 'http://localhost:3000',
@@ -30,12 +32,24 @@ const contestRoutes = require('./routes/contests');
 const platformRoutes = require('./routes/platform');
 const profileRoutes = require('./routes/profile');
 const platformUpdateRoutes = require('./routes/platformUpdate');
-// Apply routes                  
+const studyPlanRoutes = require('./routes/studyPlan');
+const performanceAnalyzerRoutes = require('./routes/performanceAnalyzer');
+const upcomingRoutes = require('./routes/upcoming');
+const solutionsRoutes = require('./routes/solutions');
+const pastRoutes = require('./routes/past');
+const bookmarksRoutes = require('./routes/bookmarks');
+// Apply routes
 app.use('/api/auth', authRoutes);
-app.use('/api/contests', contestRoutes); 
+app.use('/api/contests', contestRoutes);
 app.use('/api/platform', platformRoutes);
 app.use('/api/profile', profileRoutes);
-app.use('/api/platforms/update', platformUpdateRoutes);
+app.use('/api/platforms', platformUpdateRoutes);
+app.use('/api/study-plan', studyPlanRoutes);
+app.use('/api/performance', performanceAnalyzerRoutes);
+app.use('/api/upcoming', upcomingRoutes);
+app.use('/api/solutions', solutionsRoutes);
+app.use('/api/past', pastRoutes);
+app.use('/api/bookmarks', bookmarksRoutes);
 // Email reminder endpoint
 app.post('/api/send-reminder', async (req, res) => {
   const { email, contestName, platform, startTime, contestUrl } = req.body;
@@ -49,7 +63,7 @@ app.post('/api/send-reminder', async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_FROM || 'nishthap1410@gmail.com',
       to: email,
-      subject: `🔔 Reminder: ${contestName} on ${platform}`,
+      subject: `Contest Reminder: ${contestName} on ${platform}`,
       html: `
         <h2>${contestName} starts soon!</h2>
         <p><strong>Platform:</strong> ${platform}</p>

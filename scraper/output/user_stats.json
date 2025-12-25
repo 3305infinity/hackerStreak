@@ -1,0 +1,69 @@
+[
+  {
+    "platform": "Codeforces",
+    "handle": "tourist",
+    "rating": 1500,
+    "maxRating": 4009,
+    "rank": "legendary grandmaster",
+    "maxRank": "tourist",
+    "solvedProblems": 2928,
+    "problemBreakdown": {
+      "easy": 404,
+      "medium": 385,
+      "hard": 1858
+    },
+    "profileUrl": "https://codeforces.com/profile/tourist",
+    "success": true
+  },
+  {
+    "platform": "CodeChef",
+    "handle": "admin",
+    "rating": null,
+    "rank": null,
+    "solvedProblems": 0,
+    "problemBreakdown": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 0
+    },
+    "profileUrl": "https://www.codechef.com/users/admin",
+    "success": true
+  },
+  {
+    "platform": "LeetCode",
+    "handle": "leetcode",
+    "rating": null,
+    "rank": 2404566,
+    "reputation": 66970,
+    "solvedProblems": 90,
+    "totalAttempted": 120,
+    "acceptanceRate": 75.0,
+    "problemBreakdown": {
+      "easy": 12,
+      "medium": 22,
+      "hard": 11
+    },
+    "attemptedBreakdown": {
+      "easy": 15,
+      "medium": 34,
+      "hard": 11
+    },
+    "profileUrl": "https://leetcode.com/leetcode",
+    "success": true,
+    "lastUpdated": 1766606997.6383567
+  },
+  {
+    "platform": "AtCoder",
+    "handle": "chokudai",
+    "rating": null,
+    "rank": null,
+    "solvedProblems": 0,
+    "problemBreakdown": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 0
+    },
+    "profileUrl": "https://atcoder.jp/users/chokudai",
+    "success": true
+  }
+]

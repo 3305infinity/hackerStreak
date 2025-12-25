@@ -362,7 +362,7 @@ def debug_page():
         """
         return debug_html
     except Exception as e:
-        return f"<h1>Error</h1><p>{str(e)}</p>
+        return f"<h1>Error</h1><p>{str(e)}</p>"
 
 if __name__ == "__main__":
     logger.info("Starting server at http://localhost:5002")

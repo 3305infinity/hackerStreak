@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Navbar from './Navbar';
+import React, { useEffect, useState } from 'react';
 import ContestCard from './UpcomingContestCard';
 import './Home.css';
-import { BookmarkContext } from '../context/BookmarkContext.js';
 import { Link } from 'react-router-dom';
+
 function Home() {
   
    const [typedText, setTypedText] = useState('');
@@ -36,7 +35,7 @@ function Home() {
       return () => clearInterval(cursorInterval);
     }, []);
   
-  const { bookmarkedContests, toggleBookmark } = useContext(BookmarkContext);
+
   const [contests, setContests] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('all');
@@ -70,8 +69,6 @@ function Home() {
 
   return (
     <div className="home-container">
-      <Navbar />
-      
       <main className="home-main">
         <section className="hero-section">
           <div className="hero-content">
@@ -191,10 +188,7 @@ function Home() {
           ) : filteredContests.length > 0 ? (
             <div className="contest-grid">
               {filteredContests.slice(0, 2).map(contest => (
-                <ContestCard key={contest.id} contest={contest}
-                isBookmarked={bookmarkedContests.some(c => c.id === contest.id)}
-                onBookmarkToggle={toggleBookmark}
-                />
+                <ContestCard key={contest.id} contest={contest} />
               ))}
             </div>
           ) : (

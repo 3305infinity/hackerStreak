@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
 import { FaPlus, FaTrash, FaPen, FaCheck, FaTimes } from 'react-icons/fa';
 import axios from 'axios';
 import './AddPlatform.css';
@@ -146,11 +145,9 @@ const AddPlatform = () => {
 
   return (
     <div className="add-platform-container">
-      <Navbar />
-      
       <div className="platform-content">
         <div className="platform-header">
-          <h1>Manage Your Coding Platforms</h1>
+          <h1>🔗 Link Your Coding Platforms</h1>
           <p>Add your handles from various coding platforms to track your progress</p>
         </div>
 

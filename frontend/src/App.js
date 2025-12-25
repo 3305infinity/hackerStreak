@@ -1,44 +1,44 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min"; // Optional for JS components like modals
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BookmarkProvider } from './context/BookmarkContext';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Main from './components/Main';
-import Home from './components/Home';
+import Profile from './components/Profile';
+import UpcomingContests from './pages/UpcomingContests';
+import PastContests from './pages/PastContests';
+import Solutions from './pages/Solutions';
+import StudyPlan from './pages/StudyPlan';
+import PerformanceAnalyzer from './pages/PerformanceAnalyzer';
+import PerformancePredictor from './pages/PerformancePredictor';
+import Bookmark from './pages/Bookmark';
 import AddPlatform from './components/AddPlatform';
-import ProfilePage from './components/Profile';
-import BookmarksPage from './pages/Bookmark';
-import { BookmarkProvider } from './context/BookmarkContext';
-import AllContests from './pages/AllContests';
+import './App.css';
+
 function App() {
   return (
-    <> 
-      <BookmarkProvider>
-    <Router> 
-      {/* <div className="container">  */}
-      {/* <Navbar/>                                                                                   */}
-    <Routes>
-    {/* <Route exact path="/" element={<Navbar/>}></Route> */}
-          <Route exact path="/" element={<Home/>}></Route>
-          {/* <Route exact path="/about" element={<About/>}></Route> */}
-          <Route exact path="/login" element={<Login/>}></Route>
-          <Route exact path="/signup" element={<Signup/>}></Route>
-          <Route exact path="/addplatform" element={<AddPlatform/>}></Route>
-          <Route path="/bookmark" element={<BookmarksPage />} />
-          <Route exact path="/profile" element={<ProfilePage/>}></Route>
-          
-          <Route exact path="/allcontests" element={<AllContests/>}></Route>
-    </Routes>
-    {/* </div> */}
-    </Router> 
+    <BookmarkProvider>
+      <Router>
+        <Navbar />
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/upcoming" element={<UpcomingContests />} />
+            <Route path="/past" element={<PastContests />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/study-plan" element={<StudyPlan />} />
+            <Route path="/performance-analyzer" element={<PerformanceAnalyzer />} />
+            <Route path="/performance-predictor" element={<PerformancePredictor />} />
+            <Route path="/bookmark" element={<Bookmark />} />
+            <Route path="/addplatform" element={<AddPlatform />} />
+          </Routes>
+        </div>
+      </Router>
     </BookmarkProvider>
-    </>
   );
 }
 

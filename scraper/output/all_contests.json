@@ -1,0 +1,355 @@
+{
+  "upcoming": [
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 482",
+      "url": "https://leetcode.com/contest/weekly-contest-482",
+      "start_time": "2025-12-28T08:00:00+05:30",
+      "duration": "90m",
+      "status": "upcoming"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 173",
+      "url": "https://leetcode.com/contest/biweekly-contest-173",
+      "start_time": "2025-12-27T20:00:00+05:30",
+      "duration": "120m",
+      "status": "upcoming"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2182,
+      "name": "Educational Codeforces Round 186 (Rated for Div. 2)",
+      "startTimeSeconds": 1767018900,
+      "durationSeconds": 7200,
+      "phase": "BEFORE",
+      "url": "https://codeforces.com/contest/2182",
+      "startTime": "2025-12-29T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2178,
+      "name": "Good Bye 2025",
+      "startTimeSeconds": 1766846100,
+      "durationSeconds": 10800,
+      "phase": "BEFORE",
+      "url": "https://codeforces.com/contest/2178",
+      "startTime": "2025-12-27T20:05:00",
+      "duration": "3h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2177,
+      "name": "ICPC 2025 Online Winter Challenge powered by Huawei",
+      "startTimeSeconds": 1766746800,
+      "durationSeconds": 1382400,
+      "phase": "BEFORE",
+      "url": "https://codeforces.com/contest/2177",
+      "startTime": "2025-12-26T16:30:00",
+      "duration": "384h 0m"
+    }
+  ],
+  "past": [
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 481",
+      "url": "https://leetcode.com/contest/weekly-contest-481",
+      "start_time": "2025-12-21T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 172",
+      "url": "https://leetcode.com/contest/biweekly-contest-172",
+      "start_time": "2025-12-20T20:00:00+05:30",
+      "duration": "120m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 480",
+      "url": "https://leetcode.com/contest/weekly-contest-480",
+      "start_time": "2025-12-14T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 479",
+      "url": "https://leetcode.com/contest/weekly-contest-479",
+      "start_time": "2025-12-07T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 171",
+      "url": "https://leetcode.com/contest/biweekly-contest-171",
+      "start_time": "2025-12-06T20:00:00+05:30",
+      "duration": "120m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 478",
+      "url": "https://leetcode.com/contest/weekly-contest-478",
+      "start_time": "2025-11-30T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 477",
+      "url": "https://leetcode.com/contest/weekly-contest-477",
+      "start_time": "2025-11-23T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 170",
+      "url": "https://leetcode.com/contest/biweekly-contest-170",
+      "start_time": "2025-11-22T20:00:00+05:30",
+      "duration": "120m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 476",
+      "url": "https://leetcode.com/contest/weekly-contest-476",
+      "start_time": "2025-11-16T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 475",
+      "url": "https://leetcode.com/contest/weekly-contest-475",
+      "start_time": "2025-11-09T08:00:00+05:30",
+      "duration": "90m",
+      "status": "past"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2179,
+      "name": "Codeforces Round 1071 (Div. 3)",
+      "startTimeSeconds": 1766501100,
+      "durationSeconds": 9000,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2179",
+      "startTime": "2025-12-23T20:15:00",
+      "duration": "2h 30m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2180,
+      "name": "Codeforces Global Round 31 (Div. 1 + Div. 2)",
+      "startTimeSeconds": 1766154900,
+      "durationSeconds": 9000,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2180",
+      "startTime": "2025-12-19T20:05:00",
+      "duration": "2h 30m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2181,
+      "name": "2025-2026 ICPC, NERC, Northern Eurasia Finals (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",
+      "startTimeSeconds": 1765958700,
+      "durationSeconds": 18000,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2181",
+      "startTime": "2025-12-17T13:35:00",
+      "duration": "5h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2176,
+      "name": "Codeforces Round 1070 (Div. 2)",
+      "startTimeSeconds": 1765463700,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2176",
+      "startTime": "2025-12-11T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2174,
+      "name": "Codeforces Round 1069 (Div. 1)",
+      "startTimeSeconds": 1765008900,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2174",
+      "startTime": "2025-12-06T13:45:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2175,
+      "name": "Codeforces Round 1069 (Div. 2)",
+      "startTimeSeconds": 1765008900,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2175",
+      "startTime": "2025-12-06T13:45:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2173,
+      "name": "Codeforces Round 1068 (Div. 2)",
+      "startTimeSeconds": 1764945300,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2173",
+      "startTime": "2025-12-05T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2158,
+      "name": "Codeforces Round 1067 (Div. 2)",
+      "startTimeSeconds": 1764426900,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2158",
+      "startTime": "2025-11-29T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2170,
+      "name": "Educational Codeforces Round 185 (Rated for Div. 2)",
+      "startTimeSeconds": 1764340500,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2170",
+      "startTime": "2025-11-28T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2157,
+      "name": "Codeforces Round 1066 (Div. 1 + Div. 2)",
+      "startTimeSeconds": 1763890500,
+      "durationSeconds": 10800,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2157",
+      "startTime": "2025-11-23T15:05:00",
+      "duration": "3h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2171,
+      "name": "Codeforces Round 1065 (Div. 3)",
+      "startTimeSeconds": 1763649300,
+      "durationSeconds": 9000,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2171",
+      "startTime": "2025-11-20T20:05:00",
+      "duration": "2h 30m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2165,
+      "name": "Codeforces Round 1064 (Div. 1)",
+      "startTimeSeconds": 1763303700,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2165",
+      "startTime": "2025-11-16T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2166,
+      "name": "Codeforces Round 1064 (Div. 2)",
+      "startTimeSeconds": 1763303700,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2166",
+      "startTime": "2025-11-16T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2172,
+      "name": "2025 ICPC Asia Taichung Regional Contest (Unrated, Online Mirror, ICPC Rules, Preferably Teams)",
+      "startTimeSeconds": 1763257800,
+      "durationSeconds": 18000,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2172",
+      "startTime": "2025-11-16T07:20:00",
+      "duration": "5h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2169,
+      "name": "Educational Codeforces Round 184 (Rated for Div. 2)",
+      "startTimeSeconds": 1763130900,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2169",
+      "startTime": "2025-11-14T20:05:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2163,
+      "name": "Codeforces Round 1063 (Div. 2)",
+      "startTimeSeconds": 1762787100,
+      "durationSeconds": 7200,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2163",
+      "startTime": "2025-11-10T20:35:00",
+      "duration": "2h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2164,
+      "name": "Codeforces Global Round 30 (Div. 1 + Div. 2)",
+      "startTimeSeconds": 1762439700,
+      "durationSeconds": 10800,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2164",
+      "startTime": "2025-11-06T20:05:00",
+      "duration": "3h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2168,
+      "name": "Testing Round 20 (Unrated, Communication Problems)",
+      "startTimeSeconds": 1762180500,
+      "durationSeconds": 3600,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2168",
+      "startTime": "2025-11-03T20:05:00",
+      "duration": "1h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2161,
+      "name": "Pinely Round 5 (Div. 1 + Div. 2)",
+      "startTimeSeconds": 1761842100,
+      "durationSeconds": 10800,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2161",
+      "startTime": "2025-10-30T22:05:00",
+      "duration": "3h 0m"
+    },
+    {
+      "platform": "Codeforces",
+      "contestId": 2167,
+      "name": "Codeforces Round 1062 (Div. 4)",
+      "startTimeSeconds": 1761662100,
+      "durationSeconds": 8100,
+      "phase": "FINISHED",
+      "url": "https://codeforces.com/contest/2167",
+      "startTime": "2025-10-28T20:05:00",
+      "duration": "2h 15m"
+    }
+  ]
+}
